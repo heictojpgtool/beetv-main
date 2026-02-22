@@ -1,7 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /checkout/
+Disallow: /api/
+Disallow: /_next/
 
-Sitemap: https://twittervideodownload.com.in/sitemap.xml
+Sitemap: https://beetv.click/sitemap.xml
