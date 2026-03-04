@@ -35,9 +35,7 @@ h1, h2, h3, h4 {
   font-weight: 800;
 }
 
-/* ===========================
-   NAVBAR
-=========================== */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -109,9 +107,7 @@ h1, h2, h3, h4 {
   font-size: 13px !important;
 }
 
-/* ===========================
-   HERO
-=========================== */
+
 .hero {
   min-height: 90vh;
   display: flex;
@@ -255,9 +251,7 @@ h1, h2, h3, h4 {
   z-index: 2;
 }
 
-/* ===========================
-   PHONE MOCKUP
-=========================== */
+
 .phone-mockup {
   width: 260px;
   height: 520px;
@@ -381,9 +375,7 @@ h1, h2, h3, h4 {
   pointer-events: none;
 }
 
-/* ===========================
-   FEATURES STRIP
-=========================== */
+
 .features-strip {
   background: var(--dark2);
   border-top: 1px solid #222;
@@ -416,9 +408,7 @@ h1, h2, h3, h4 {
   font-size: 16px;
 }
 
-/* ===========================
-   SECTION COMMONS
-=========================== */
+
 .section {
   padding: 80px 5%;
 }
@@ -451,9 +441,7 @@ h1, h2, h3, h4 {
   margin-bottom: 50px;
 }
 
-/* ===========================
-   ABOUT
-=========================== */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -577,9 +565,7 @@ h1, h2, h3, h4 {
   line-height: 1.5;
 }
 
-/* ===========================
-   INSTALL / HOW TO
-=========================== */
+
 .install-section {
   background: var(--dark2);
   border-top: 1px solid #1e1e1e;
@@ -641,9 +627,7 @@ h1, h2, h3, h4 {
   line-height: 1.6;
 }
 
-/* ===========================
-   WHY BEETV
-=========================== */
+
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -681,9 +665,7 @@ h1, h2, h3, h4 {
   line-height: 1.6;
 }
 
-/* ===========================
-   DEVICES
-=========================== */
+
 .devices-section {
   background: linear-gradient(160deg, rgba(255, 208, 0, 0.04) 0%, transparent 50%);
   border-top: 1px solid #1e1e1e;
@@ -726,9 +708,7 @@ h1, h2, h3, h4 {
   color: #666;
 }
 
-/* ===========================
-   DOWNLOAD CTA
-=========================== */
+
 .download-cta {
   text-align: center;
   background: var(--dark2);
@@ -778,9 +758,7 @@ h1, h2, h3, h4 {
   font-size: 14px;
 }
 
-/* ===========================
-   FAQ
-=========================== */
+
 .faq-section {
   border-top: 1px solid #1e1e1e;
 }
@@ -851,9 +829,7 @@ h1, h2, h3, h4 {
   animation: fadeIn 0.2s ease;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+
 .footer {
   background: var(--dark);
   border-top: 1px solid #1e1e1e;
@@ -927,9 +903,7 @@ h1, h2, h3, h4 {
   color: var(--yellow);
 }
 
-/* ===========================
-   ANIMATIONS
-=========================== */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -941,9 +915,7 @@ h1, h2, h3, h4 {
   }
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+
 @media (max-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -1018,11 +990,7 @@ h1, h2, h3, h4 {
   }
 }
 
-/* ===========================
-   ADDITIONAL UTILITY CLASSES
-=========================== */
 
-/* About phone inner heading */
 .about-phone-heading {
   font-size: 11px;
   color: var(--yellow);
@@ -1031,7 +999,7 @@ h1, h2, h3, h4 {
   font-family: 'Sora', sans-serif;
 }
 
-/* Now playing box inside about phone */
+
 .now-playing-box {
   margin-top: 12px;
   background: #1a1a1a;
@@ -1076,7 +1044,7 @@ h1, h2, h3, h4 {
   margin-top: 2px;
 }
 
-/* CTA section overrides */
+
 .cta-label {
   text-align: center;
 }
@@ -1087,7 +1055,7 @@ h1, h2, h3, h4 {
   padding: 16px 36px;
 }
 
-/* FAQ header centered */
+
 .faq-header {
   text-align: center;
   margin-bottom: 50px;
@@ -1098,21 +1066,19 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-/* Footer logo spacing */
+
 .footer-logo {
   margin-bottom: 8px;
   display: inline-flex;
 }
 
-/* Footer disclaimer */
+
 .footer-disclaimer {
   font-size: 11px;
   color: #444;
 }
 
-/* ===========================
-   SEO ARTICLE SECTION
-=========================== */
+
 .article-section {
   background: var(--dark);
   border-top: 1px solid #1e1e1e;

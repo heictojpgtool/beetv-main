@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
-/* ===========================
-   CSS RESET
-=========================== */
+
 *,
 *::before,
 *::after {
@@ -11,9 +9,7 @@
   padding: 0;
 }
 
-/* ===========================
-   CSS VARIABLES
-=========================== */
+
 :root {
   --yellow: #FFD000;
   --yellow-dark: #e6bb00;
@@ -46,9 +42,7 @@
   --shadow-yellow-lg: 0 0 50px rgba(255, 208, 0, 0.35);
 }
 
-/* ===========================
-   BASE
-=========================== */
+
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -64,9 +58,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ===========================
-   TYPOGRAPHY
-=========================== */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 800;
@@ -93,9 +85,7 @@ em {
   font-style: italic;
 }
 
-/* ===========================
-   IMAGES & MEDIA
-=========================== */
+
 img,
 video {
   max-width: 100%;
@@ -103,16 +93,12 @@ video {
   display: block;
 }
 
-/* ===========================
-   LISTS
-=========================== */
+
 ul, ol {
   list-style: none;
 }
 
-/* ===========================
-   BUTTONS BASE
-=========================== */
+
 button {
   font-family: var(--font-body);
   cursor: pointer;
@@ -130,9 +116,7 @@ textarea:focus-visible {
   border-radius: 4px;
 }
 
-/* ===========================
-   INPUTS BASE
-=========================== */
+
 input,
 textarea,
 select {
@@ -157,9 +141,7 @@ textarea::placeholder {
   color: var(--text-faint);
 }
 
-/* ===========================
-   SCROLLBAR
-=========================== */
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -178,37 +160,27 @@ textarea::placeholder {
   background: #3a3a3a;
 }
 
-/* ===========================
-   SELECTION
-=========================== */
+
 ::selection {
   background: rgba(255, 208, 0, 0.25);
   color: #ffffff;
 }
 
-/* ===========================
-   UTILITY CLASSES
-=========================== */
 
-/* Text colors */
 .text-yellow  { color: var(--yellow); }
 .text-white   { color: var(--text-primary); }
 .text-muted   { color: var(--text-muted); }
 
-/* Text align */
 .text-center  { text-align: center; }
 .text-left    { text-align: left; }
 
-/* Display */
 .d-flex       { display: flex; }
 .d-grid       { display: grid; }
 .d-none       { display: none; }
 
-/* Spacing */
 .mt-auto      { margin-top: auto; }
 .mx-auto      { margin-left: auto; margin-right: auto; }
 
-/* Visually hidden (accessibility) */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -221,9 +193,7 @@ textarea::placeholder {
   border-width: 0;
 }
 
-/* ===========================
-   ANIMATIONS
-=========================== */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -254,14 +224,7 @@ textarea::placeholder {
 .animate-float     { animation: float 4s ease-in-out infinite; }
 .animate-pulse     { animation: pulse 2s ease-in-out infinite; }
 
-/* ===========================
-   RESPONSIVE BREAKPOINTS
-   xs: 480px
-   sm: 640px
-   md: 768px
-   lg: 1024px
-   xl: 1280px
-=========================== */
+
 @media (max-width: 768px) {
   h1 { font-size: clamp(26px, 6vw, 40px); }
   h2 { font-size: clamp(22px, 5vw, 32px); }

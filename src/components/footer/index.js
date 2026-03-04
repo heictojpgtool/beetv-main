@@ -1,103 +1,43 @@
 "use client";
 
-import Link from "next/link";
-import { useState, useEffect } from "react";
-import styles from "./footer.module.css";
+import "./footer.css";
 
-export default function Footer() {
-  const [showScroll, setShowScroll] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setShowScroll(window.scrollY > 400);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+export default function Footer({ lang = "en" }) {
+  const base = lang === "en" ? "" : `/${lang}`;
 
   return (
-    <>
-      <footer className={styles.footer}>
+    <footer className="ft-footer">
 
-        {/* TOP GRID */}
-        <div className={styles.footerTop}>
+      <div className="ft-links-row">
+        <a href={`${base}/contact`} className="ft-link">Contacts</a>
+        <a href={lang === "en" ? "/" : `/${lang}`} className="ft-link">TikTok Viewer</a>
+      </div>
 
-          {/* BRAND */}
-          <div className={styles.footerBrand}>
-            <div className={styles.logo}>🐝</div>
-            <h3>BeeTV — Free Streaming App</h3>
-            <p>
-              BeeTV is the #1 free streaming app for Android and FireStick.
-              Watch HD movies, TV shows, and live channels — no subscription,
-              no registration, completely free.
-            </p>
-          </div>
+      <div className="ft-links-row">
+        <a href="https://twittervideodownload.com.in/" target="_blank" rel="noopener noreferrer" className="ft-link">
+          Twitter Video Downloader
+        </a>
+      </div>
 
-          {/* QUICK LINKS */}
-          <div className={styles.footerLinks}>
-            <h4>Quick Links</h4>
-            <Link href="#download">Download APK</Link>
-            <Link href="#about">About BeeTV</Link>
-            <Link href="#install">Install Guide</Link>
-            <Link href="#devices">Supported Devices</Link>
-            <Link href="#faq">FAQ</Link>
-          </div>
+      <div className="ft-disclaimer">
+        <p>We are not affiliated with TikTok, Douyin or Bytedance.</p>
+        <p>Created by our team — video downloading experts since 2018.</p>
+      </div>
 
-          {/* LEGAL LINKS */}
-          <div className={styles.footerLinks}>
-            <h4>Legal</h4>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Use</Link>
-            <Link href="/disclaimer">Disclaimer</Link>
-            <Link href="/contact">Contact Us</Link>
-            <Link href="/dmca">DMCA</Link>
-          </div>
+      <div className="ft-legal-row">
+        <span className="ft-legal-label">Legal</span>
+        <span className="ft-legal-sep">|</span>
+        <a href={`${base}/privacy-policy`} className="ft-legal-link">Privacy Policy</a>
+        <a href={`${base}/terms`} className="ft-legal-link">Terms of Use</a>
+        <a href={`${base}/disclaimer`} className="ft-legal-link">Disclaimer</a>
+        <a href={`${base}/contact`} className="ft-legal-link">Contact Us</a>
+        <a href={`${base}/dmca`} className="ft-legal-link">DMCA</a>
+      </div>
 
-          {/* SUPPORTED PLATFORMS */}
-          <div className={styles.footerPlatforms}>
-            <h4>Supported Platforms</h4>
-            <div className={styles.platformTags}>
-              <span>📱 Android</span>
-              <span>🔥 FireStick</span>
-              <span>📺 Fire TV</span>
-              <span>🖥️ Android TV</span>
-              <span>📟 Tablet</span>
-              <span>🎮 Nvidia Shield</span>
-            </div>
-          </div>
+      <div className="ft-copy">
+        Copyright 2018–{new Date().getFullYear()}
+      </div>
 
-        </div>
-
-        {/* DISCLAIMER */}
-        <div className={styles.footerDisclaimer}>
-          <strong>⚠ Disclaimer:</strong> BeeTV is an independent third-party application
-          and is not affiliated with, endorsed by, or connected to any official streaming
-          service, broadcaster, or content provider. beetv.click provides the APK purely
-          for informational and accessibility purposes. Users are solely responsible for
-          ensuring their use of the application complies with the laws and regulations
-          applicable in their respective countries or regions.
-        </div>
-
-        {/* BOTTOM BAR */}
-        <div className={styles.footerBottom}>
-          <p>© {new Date().getFullYear()} <strong>beetv.click</strong> — All Rights Reserved</p>
-          <p className={styles.made}>
-            Made with <span>♥</span> for cord-cutters worldwide
-          </p>
-        </div>
-
-      </footer>
-
-      {/* SCROLL TO TOP */}
-      {showScroll && (
-        <button
-          className={styles.scrollTop}
-          onClick={scrollToTop}
-          aria-label="Scroll to top"
-        >
-          ↑
-        </button>
-      )}
-    </>
+    </footer>
   );
 }

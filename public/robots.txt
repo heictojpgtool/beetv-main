@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://beetv.click/sitemap.xml
+Sitemap: https://tiktokdownloader.com.pk/sitemap.xml
